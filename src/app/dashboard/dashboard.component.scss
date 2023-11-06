@@ -1,0 +1,28 @@
+.example-button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .View, .Edit, .Delete {
+    padding: 0.5rem;
+    font-size: smaller;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  th, td {
+    font-size: small;
+    padding: 0.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    th, td {
+      font-size: x-small;
+      padding: 0.2rem;
+    }
+  
+  }

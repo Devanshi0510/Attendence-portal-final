@@ -1,0 +1,35 @@
+@mixin middle{
+    margin-left: 1.2rem;
+    font-style: normal;
+}
+
+
+.add-stud {
+    margin-left: 20rem;
+    margin-top: 5rem;
+  
+}
+.title{  
+    font-weight: 600;
+  font-family: math;
+   @include middle
+}
+
+.button1{
+    @include middle;
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .add-stud {
+        margin-left: 5rem;
+        margin-top: 5rem;
+      
+    }
+
+
+
+}

@@ -1,0 +1,33 @@
+<div class="add-stud">
+    <h2 class="title" >Edit Student Detail</h2>
+    <form  [formGroup]="addStud" (submit)="EditStudentDetail(addStud,prodId)" novalidate>
+    <p>
+  <mat-form-field appearance="outline">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="Enter Full Name" class="form-control" formControlName="id" />
+  </mat-form-field>
+</p>
+<p>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter Phone Number"  class="form-control" formControlName="name" required/>
+    </mat-form-field>
+  </p>
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Phone Number</mat-label>
+    <input matInput placeholder="Enter Phone Number"  class="form-control" formControlName="phone" required/>
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="pat@example.com" class="form-control" formControlName="email" required>
+  </mat-form-field>
+</p>
+<div class="example-button-row">
+    <button mat-raised-button color="primary" class="button1">Submit</button>
+    </div></form>
+</div>
+
+

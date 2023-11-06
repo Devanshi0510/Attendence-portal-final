@@ -1,0 +1,37 @@
+<div class="mark-stud">
+    <h2 class="title" >Mark Attendence</h2>
+    <form [formGroup]="markStud" (submit)="MarkAttend(markStud)" novalidate>
+    <p>
+        
+  <mat-form-field appearance="outline">
+    <mat-label>Student ID</mat-label>
+    <input matInput placeholder="Enter Student Id" class="form-control" formControlName="id" required/>
+
+  </mat-form-field>
+
+</p>
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Date</mat-label>
+    <input  matInput [matDatepicker]="picker" class="form-control" formControlName="date" required>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker> 
+    <mat-hint>DD/MM/YYYY</mat-hint>
+</mat-form-field>
+</p>
+<p>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Select</mat-label>
+        <mat-select matInput class="form-control" formControlName="status" placeholder="Mark Status" required>
+          <mat-option value="Present">Present</mat-option>
+          <mat-option value="Absent">Absent</mat-option>
+        </mat-select>
+      </mat-form-field>
+</p>
+<div class="example-button-row">
+    <button mat-raised-button color="primary" class="button1">Submit</button>
+    </div></form>
+</div>
+
+
